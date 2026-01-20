@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Mi Landing Page{% endblock %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-light rounded-3 text-center">
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold">Bienvenido a mi Proyecto Django</h1>
+        <p class="col-md-8 fs-4 mx-auto">Esta es una landing page rápida y responsiva construida con el motor de plantillas de Django.</p>
+        <a href="{% url 'configuracion:contacto' %}" class="btn btn-primary btn-lg">Saber más</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h3>Rápido</h3>
+            <p>Configuración inmediata sin complicaciones de DB.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Limpio</h3>
+            <p>Código organizado mediante herencia de plantillas.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Escalable</h3>
+            <p>Listo para conectar una base de datos cuando quieras.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
